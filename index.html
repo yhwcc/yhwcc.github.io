@@ -8,11 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Keep the same HTML structure from previous answer -->
-    <!-- Replace image placeholders with actual image tags -->
-    <div class="image-section">
-        <img src="images/photo1.jpg" alt="Diary Image 1">
+    <div class="notebook">
+        <div class="pages-container">
+            <!-- Page 1 -->
+            <div class="page">
+                <div class="text-section">
+                    <textarea class="note-area" data-max-words="250"></textarea>
+                    <div class="word-counter">Words: 0/250</div>
+                </div>
+                <div class="image-section">
+                    <img src="images/photo1.jpg" alt="Diary Image">
+                </div>
+                <div class="page-number">Page 1/6</div>
+            </div>
+            <!-- Repeat for other 5 pages -->
+        </div>
+        <div class="nav-arrows">
+            <button class="arrow prev-btn">← Previous</button>
+            <button class="arrow next-btn">Next →</button>
+        </div>
     </div>
-    <!-- Repeat for other images -->
+    <script src="script.js"></script>
 </body>
 </html>
