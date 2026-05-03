@@ -1,0 +1,398 @@
+.content-bg-box {
+  background-color: #000;
+  width: 100%;
+  height: 602px;
+  padding: 8px;
+  display: flex;
+  position: relative;
+}
+
+.bg-info {
+  background-color: #f7f8f0;
+  position: absolute;
+  right: 64px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .bg-stat {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .bg-stat-info {
+    color: #355973;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  a {
+    border: none;
+    background-color: #355973;
+    color: #f7f8f0;
+    width: fit-content;
+    margin-top: 24px;
+    padding: 16px 24px;
+    font-size: 12px;
+    font-weight: bold;
+     transition: transform 0.33s;
+  }
+
+  a:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.content-title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 32px 0px;
+  gap: 4px;
+  color: #a3a3a3;
+  font-size: 18px;
+
+  :first-child {
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+    letter-spacing: -1px;
+  }
+}
+
+.content-window {
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+
+    span {
+      font-weight: bold;
+      font-size: 22px;
+      margin-top: 16px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 505px;
+      border-radius: 16px;
+      transition:
+        0.33s width,
+        0.33s height;
+    }
+  }
+}
+
+.content-window2 {
+  div {
+    margin: 8px 6px;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #f4f5f7;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 8px;
+
+      .content-name,
+      .content-price {
+        font-weight: bold;
+        color: #000;
+      }
+
+      .content-desc {
+        color: #a3a3a3;
+      }
+    }
+
+    img {
+      background-color: #000;
+      width: 300px;
+      height: 300px;
+      transition:
+        0.33s width,
+        0.33s height;
+    }
+  }
+}
+
+.window2 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 24px;
+}
+
+.window {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Discover more */
+.disc-more {
+  background-color: #7aaace;
+  width: 100%;
+  height: 702px;
+  padding: 8px;
+  display: flex;
+  position: relative;
+  margin-top: 64px;
+  justify-content: center;
+}
+
+.disc-info {
+  display: flex;
+  color: #f7f8f0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.509);
+  justify-content: center;
+  align-items: center;
+  width: 686px;
+}
+
+.DI-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  letter-spacing: 0.5px;
+
+  button {
+    border: none;
+    background-color: #355973;
+    color: #f7f8f0;
+    width: fit-content;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.33s;
+  }
+
+  button:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.DI-title {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.DI-info {
+  font-size: 16px;
+}
+
+.disc-content {
+  display: flex;
+  gap: 32px;
+  margin: 32px 0px;
+  max-width: 1000px;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+
+  div {
+    display: flex;
+    min-width: 400px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+    img  {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.disc-content::after {
+  content: "";
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(122, 170, 206, 0) 0%,
+    rgba(122, 170, 206, 1) 50%
+  );
+  position: absolute;
+  right: 0;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  border-top: #f2f2f2 4px solid;
+  border-bottom: #f2f2f2 4px solid;
+  margin-top: 48px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: left;
+  padding: 0px 64px;
+  gap: 80px;
+  
+  .main-c {
+    margin-right: auto;
+  }
+
+  .balancer {
+    padding-right: 248px;
+  }
+}
+
+.cutted {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 18px;
+  margin-bottom: 32px;
+
+  .btitle {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .title {
+    color: #a3a3a3;
+    padding-bottom: 32px;
+  }
+
+  a:not(.title) {
+    margin-bottom: 24px;
+    font-weight: bold;
+  }
+
+  span {
+    margin: 78px 0px;
+  }
+}
+
+.footerfooter {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 32px;
+  margin-bottom: 32px;
+}
+
+/* Medias */
+@media (min-width: 481px) {
+  .window2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .content-window {
+    div {
+      width: 177.5px;
+      img {
+        width: 100%;
+        height: 252.5px;
+        object-fit: cover;
+      }
+      transition: transform 0.33s;
+    }
+
+    div:hover {
+      transform: translateY(-15px);
+    }
+  }
+
+  .content-window2 {
+    a {
+      transition: transform 0.33s;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .content-name,
+      .content-price {
+        font-weight: bold;
+        color: #000;
+        font-size: 14px;
+      }
+
+      .content-desc {
+        font-size: 12px;
+      }
+    }
+
+    a:hover {
+      transform: translateY(-15px);
+    }
+  }
+  /* Layout shifts for wider screens start here */
+}
+
+/* 3. Laptops and Small Desktop Monitors */
+@media (min-width: 769px) {
+  .window {
+    flex-direction: row;
+  }
+
+  .window2 {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .content-window2 {
+    a {
+      img {
+        width: 300px;
+        height: 300px;
+      }
+
+      .content-price,
+      .content-name {
+        font-weight: bold;
+        color: #000;
+      }
+
+      .content-name {
+        font-size: 22px;
+      }
+
+      .content-price {
+        font-size: 18px;
+      }
+
+      .content-desc {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .content-window {
+    div {
+      width: 355px;
+      img {
+        width: 100%;
+        height: 505px;
+        object-fit: cover;
+      }
+    }
+  }
+  /* reintroduce sidebars or multi-column grids */
+}
+
+/* 4. Large Desktops and Hi-Res Screens */
+@media (min-width: 1025px) {
+  /* maximize space on large 1920x1080+ displays */
+}
